@@ -47,6 +47,9 @@ public class CacheConfiguration {
             createCache(cm, fr.humanbooster.ar.domain.User.class.getName());
             createCache(cm, fr.humanbooster.ar.domain.Authority.class.getName());
             createCache(cm, fr.humanbooster.ar.domain.User.class.getName() + ".authorities");
+            createCache(cm, fr.humanbooster.ar.domain.Article.class.getName());
+            createCache(cm, fr.humanbooster.ar.domain.Categorie.class.getName());
+            createCache(cm, fr.humanbooster.ar.domain.Categorie.class.getName() + ".articles");
             // jhipster-needle-ehcache-add-entry
         };
     }
