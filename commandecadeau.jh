@@ -1,0 +1,18 @@
+
+entity Article {
+	id Long required
+    designation String
+    stock Integer
+    nbPoints Integer
+    description String
+}
+
+entity Categorie {
+	id Long required
+    nom String
+    prixEnEuros Float
+}
+
+relationship OneToMany {
+	Categorie{articles} to Article{categorie(id)}
+}
